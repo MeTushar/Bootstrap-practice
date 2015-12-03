@@ -1,0 +1,55 @@
+body{
+	
+	/* height: 1000px; */
+}
+.navbar{
+	border-radius: 0;
+	padding: 12px 10px;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.navbar img{
+	
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #bbb;
+}
+.cbp-af-header-shrink{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	opacity: 0.9;
+}
+.fill-screen{
+	background-size: cover;
+	background-position: center;
+	position:relative;
+}
+.fill-screen img{
+	padding-top: 80px;
+	margin-top: 30px;
+}
+.fill-screen p{
+	font-family: LatoLight;
+    font-size: 3em;
+    font-weight: lighter;
+    line-height: 60px;
+    margin: 10px 0 30px;
+}
+.fill-screen p a{
+	color: #bbb;
+}
+.content-filler{
+	min-height: 350px;
+}
+.fixed-attachment{
+	background-attachment: fixed;
+}
+.title-row{
+	
+}
+.down-button{
+	margin-top: 100px;
+}
+.down-button i{
+	color: #fff;
+}
