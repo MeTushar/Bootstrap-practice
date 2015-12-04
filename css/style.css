@@ -23,6 +23,7 @@ body{
 	background-size: cover;
 	background-position: center;
 	position:relative;
+	height: 600px;
 }
 .fill-screen img{
 	padding-top: 80px;
@@ -36,10 +37,11 @@ body{
     margin: 10px 0 30px;
 }
 .fill-screen p a{
-	color: #bbb;
+	color: #fff;
 }
 .content-filler{
 	min-height: 350px;
+	
 }
 .fixed-attachment{
 	background-attachment: fixed;
@@ -53,3 +55,39 @@ body{
 .down-button i{
 	color: #fff;
 }
+.btn-primary {
+    background-color: #fd6ca3;
+    border-color: #fd6ca3;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background-color: #fd6ca3;
+    border-color: #fd6ca3;
+    color: #fff;
+}
+.btn-default {
+    background-color: transparent;
+    border-color: #fd6ca3;
+    color: #fd6ca3;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default{
+	background-color: #fd6ca3;
+	color: #fff;
+	border-color: #fd6ca3;
+}
+.contact-heading{
+	border-bottom: 1px solid #e1e1e1;
+}
+.contact-form h4{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.contact-form div{
+	padding-right: 0;
+}
+.contact-input{
+	margin-top: 20px;
+}
+footer.navbar{
+	margin-bottom: 0;
+}
+
