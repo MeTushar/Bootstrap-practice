@@ -1,5 +1,5 @@
 body{
-	
+	color: #fff;
 	/* height: 1000px; */
 }
 .navbar{
@@ -39,11 +39,55 @@ body{
 	color: #fff;
 }
 .content-filler{
-	min-height: 350px;
+	/* min-height: 350px; */
 	
 }
+#about{
+	height: auto;
+	background: #26A65B;
+}
+#about .contact-heading{
+	border-bottom: 1px solid #2a9858;
+}
+.portfolio-body .content-filler:last-child{
+	background-color: #F9BF3B;
+	color: #fff;
+}
+.skills {
+    background: #999 none repeat scroll 0 0;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: 10px auto;
+    color: #fff;
+    opacity: 0.5;
+}
+.skills-1{
+	background: #D35400;
+}
+.skills-2{
+	background: #4183D7;
+}
+.skills-3{
+	background: #F7CA18;
+}
+.skills-4{
+	background: #F27935;
+}
+.skills-5{
+	background: #F64747;
+}
+.skills-6{
+	background: #F2784B;
+}
+.skills span{
+	display: block;
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
 .fixed-attachment{
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 }
 .title-row{
 	
@@ -74,17 +118,22 @@ body{
 	border-color: #fd6ca3;
 }
 .contact-heading{
-	border-bottom: 1px solid #e1e1e1;
+	border-bottom: 1px solid #F5AB35;
 }
 .contact-form h4{
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
-.contact-form div{
+/* .contact-form div{
 	padding-right: 0;
-}
+} */
 .contact-input{
 	margin-top: 20px;
+}
+.portfolio-body .content-filler:last-child .btn{
+	background-color: #F5AB35;
+	border: 1px solid #F5AB35;
+	margin-bottom: 10px;
 }
 footer.navbar{
 	margin-bottom: 0;
