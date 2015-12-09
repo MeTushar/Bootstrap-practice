@@ -10,6 +10,7 @@
 	
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,7 +26,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a href="#" class="brand">Tushar Mehrotra</a>
+		      <a href="#" class="brand animated fadeInLeft">Tushar Mehrotra</a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -52,7 +53,7 @@
 							<button type="button" class="btn btn-lg btn-primary">Learn More</button>
 							<button type="button" class="btn btn-lg btn-default">Get In Touch</button>
 							<div class="down-button">
-								<a href="#about" class="btn">
+								<a href="#about" class="btn down-arrow">
 									<i class="fa fa-arrow-circle-down fa-4x"></i>
 								</a>
 							</div>
@@ -71,33 +72,33 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-6 col-lg-4">
+						<div class="col-sm-6 col-lg-4 wow flip">
 							<div class="skills skills-1 text-center">
 								<span>HTML5<br />70%</span>
 							</div>
 						</div>
-						<div class="col-sm-6 col-lg-4">
+						<div class="col-sm-6 col-lg-4 wow flip">
 							<div class="skills skills-2 text-center">
 								<span>CSS3<br />70%</span>
 							</div>
 						</div>
-						<div class="col-sm-6 col-lg-4">
+						<div class="col-sm-6 col-lg-4 wow flip">
 							<div class="skills skills-3 text-center">
 								<span>Bootstrap3<br />90%</span>
 							</div>
 						</div>
 					
-						<div class="col-sm-6 col-lg-4">
+						<div class="col-sm-6 col-lg-4 wow flip">
 							<div class="skills skills-4 text-center">
 								<span>Javascript<br />60%</span>
 							</div>
 						</div>
-						<div class="col-sm-6 col-lg-4">
+						<div class="col-sm-6 col-lg-4 wow flip">
 							<div class="skills skills-5 text-center">
 								<span>jQuery<br />85%</span>
 							</div>
 						</div>
-						<div class="col-sm-6 col-lg-4">
+						<div class="col-sm-6 col-lg-4 wow flip">
 							<div class="skills skills-6 text-center">
 								<span>Less<br />80%</span>
 							</div>
@@ -108,7 +109,7 @@
 			
 		</section>
 
-		<section class="row">
+		<section class="row" id="work">
 			<div class="fill-screen fixed-attachment" style="background-image: url(img/background11.jpg); background-color: '#ce494a';">
 				<div class="container">
 					<div class="row title-row">
@@ -123,7 +124,8 @@
 				</div>
 			</div>
 		</section>
-		<section class="row content-filler" id="work">
+		
+		<section class="row fill-screen" id="Blog">
 			
 		</section>
 		<section class="row content-filler" id="contact">
@@ -137,23 +139,23 @@
 					<div class="col-xs-12 ">
 						<h4>SEND US A MESSAGE</h4>
 						<div class="col-sm-6 contact-input">
-							<div class="form-group">
+							<div class="form-group wow fadeInLeft">
 							    <input type="text" class="form-control" placeholder="Full Name">
 							</div>
-							<div class="form-group">
+							<div class="form-group wow fadeInLeft">
 							    <input type="email" class="form-control" placeholder="Email">
 							</div>
-							<div class="form-group">
+							<div class="form-group wow fadeInLeft">
 							    <input type="text" class="form-control" placeholder="Subject">
 							</div>
 						</div>
-						<div class="col-sm-6 contact-input">
+						<div class="col-sm-6 contact-input wow fadeInLeft">
 							<textarea class="form-control" rows="5" placeholder= "Your question"></textarea>
 						</div>
 					</div>
 				</div>
 				<div class="row contact-form">
-					<div class="col-xs-12 text-right">
+					<div class="col-xs-12 text-right wow fadeInLeft">
 						<button type="button" class="btn btn-md btn-primary">Send</button>
 					</div>
 				</div>
@@ -169,19 +171,22 @@
 	<script src="js/classie.js"></script>
 	<script src="js/cbpAnimatedHeader.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js "></script>
+	<script src="js/wow.min.js"></script>
 	<script>
 	/*$(window).on("load resize", function(){
 		$(".fill-screen").css("height",window.innerHeight);
 	});*/
 	$("body").scrollspy({
-		target: ".navbar"
+		target: ".navbar",
+		offset: 160
 	});
-	$("nav a").bind("click", function(){
+	$("nav a, .down-arrow, a.brand").bind("click", function(){
 		$("html, body").stop().animate({
 				scrollTop: $($(this).attr("href")).offset().top-55
 		},1500,'easeInOutExpo');
 		event.preventDefault();
 	});
+	new WOW().init();
 	</script>
 </body>
 </html>
