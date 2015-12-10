@@ -29,6 +29,9 @@ h3{
 	font-size: 40px;
     font-weight: 700;
 }
+.about{
+	color: #07ad87;
+}
 
 .cbp-af-header-shrink{
 	padding-top: 3px;
@@ -133,13 +136,10 @@ h3{
 footer.navbar{
 	margin-bottom: 0;
 }
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+ @media only screen and (min-width:320px) and (max-width : 479px) {
 
 	.fill-screen p{
-		font-size: 2.3em;
+		font-size: 2.1em;
 		line-height: 40px;
 	}
 }
