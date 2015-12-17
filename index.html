@@ -12,9 +12,42 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.pageLoader {
+		    position: fixed;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    background-color: #000000;
+		    opacity: 0.9;
+		    z-index: 9999;
+		    text-align: center;
+		    width: 100%;
+		    padding-top: 18%;
+		}
+		#myProgress {
+		  width: 60%;
+		  margin:0 auto;
+		  height: 30px;
+		  position: relative;
+		  border: 1px solid #ccc;
+		}
+		#myBar {
+		  width: 1px;
+		  height: 100%;
+		  position: absolute;
+		  background-color: #07ad87;
+		}
+	</style>
 </head>
 <body>
-	
+	<div class="pageLoader">
+	<div id="myProgress">
+		<div id="myBar"></div>
+	</div>
+	</div>
+	<div id="banner" style="display:none;">
 	<header id="top">
 		<nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header">
 		  <div class="container-fluid">
@@ -198,7 +231,7 @@
 			<a href=""><i class="fa fa-google-plus-square fa-2x"></i></a>
 		</div>
 	</footer>
-
+	</div>
 
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -210,6 +243,21 @@
 	/*$(window).on("load resize", function(){
 		$(".fill-screen").css("height",window.innerHeight);
 	});*/
+	$(window).on("load", function(){
+	  var elem = document.getElementById("myBar");   
+	  var width = 0;
+	  var id = setInterval(frame, 100);
+	  function frame() {
+	    if (width == 100) {
+	      clearInterval(id);
+	      $(".pageLoader").hide();
+	      $("#banner").show();
+	    } else {
+	      width++; 
+	      elem.style.width = width + '%'; 
+	    }
+	  }
+	});
 	$("body").scrollspy({
 		target: ".navbar",
 		offset: 160
