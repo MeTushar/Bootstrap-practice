@@ -145,8 +145,6 @@ h3{
 }
 #portfolio img{
 	max-width: 100%;
-	margin: 15px;
-	height: 300px;
 }
 footer.navbar{
 	margin-bottom: 0;
@@ -157,6 +155,12 @@ footer a, .info a{
 }
 .info .icon{
 	margin: 3px 5px 20px;
+}
+.btn-attached{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 5px 10px;
 }
  @media only screen and (min-width:320px) and (max-width : 479px) {
 

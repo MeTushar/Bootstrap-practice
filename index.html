@@ -39,6 +39,48 @@
 		  position: absolute;
 		  background-color: #07ad87;
 		}
+		.portfolio-inner{
+			height: 200px;
+		    margin: 10px auto;
+		    width: 250px;
+		    overflow: hidden;
+		    position: relative;
+		}
+
+		.work{
+			height: 200px;
+		    width: 250px;
+		    transition: all 0.3s ease-in-out 0s;
+		    -webkit-transform: translateY(0px);
+		    -moz-transform: translateY(0px);
+		    transform: translateY(0px);
+		    display: block;
+		}
+		.portfolio-inner:hover .work{
+			-webkit-transform: translateY(200px);
+		    -moz-transform: translateY(200px);
+		    transform: translateY(200px);
+		}
+		.overlay{
+			width: 250px;
+			height: 200px;
+			transition: all 0.3s ease-in-out 0s;
+			-webkit-transform: translateY(-200px);
+			-moz-transform: translateY(-200px);
+			transform: translateY(-200px);
+			background: #000;
+			position: absolute;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+			opacity: 0.8;
+		}
+		.portfolio-inner:hover .overlay{
+			-webkit-transform: translateY(0px);
+			-moz-transform: translateY(0px);
+			transform: translateY(0px);
+		}
+		
 	</style>
 </head>
 <body>
@@ -174,14 +216,60 @@
 								<h3 class="portfolio">Portfolio</h3>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-4">
-							<img src="img/project-11.jpg"class=""> 
+						<div class="col-sm-6 col-md-3">
+							<div class="portfolio-inner">
+							<!-- <div class="work" ></div> -->
+							<div class="overlay">
+								<a href="http://www.thoughtfocus.com/" class="btn btn-primary btn-attached"><i class="fa fa-link"></i></a>
+							</div>
+							<img class="work" src="img/thought.png">
+							</div>
+							
 						</div>
-						<div class="col-sm-6 col-md-4">
-							<img src="img/project-22.jpg"class="">
+						<div class="col-sm-6 col-md-3">
+							<div class="portfolio-inner" >
+							<img src="img/project-22.jpg"class="work">
+							<div class="overlay" >
+								<a href="http://metushar.github.io/Project" class="btn btn-primary btn-attached"><i class="fa fa-link"></i></a>
+							</div>
+							</div>
+							<!-- <img src="img/project-22.jpg"class=""> -->
 						</div>
-						<div class="col-sm-6 col-md-4">
-							<img src="img/project-33.jpg"class="">
+						<div class="col-sm-6 col-md-3">
+							<div class="portfolio-inner" style="background: #84dcc6;">
+							<div class="work"></div>
+							<div class="overlay" >
+								<a href="" class="btn btn-primary btn-attached"><i class="fa fa-link"></i></a>
+							</div>
+							</div>
+							<!-- <img src="img/project-33.jpg"class=""> -->
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="portfolio-inner" style="background: #84dcc6;">
+							<div class="work"></div>
+							<div class="overlay" >
+								<a href="" class="btn btn-primary btn-attached"><i class="fa fa-link"></i></a>
+							</div>
+							</div>
+							<!-- <img src="img/project-33.jpg"class=""> -->
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="portfolio-inner" style="background: #84dcc6;">
+							<div class="work"></div>
+							<div class="overlay" >
+								<a href="" class="btn btn-primary btn-attached"><i class="fa fa-link"></i></a>
+							</div>
+							</div>
+							<!-- <img src="img/project-33.jpg"class=""> -->
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="portfolio-inner" style="background: #84dcc6;">
+							<div class="work"></div>
+							<div class="overlay" >
+								<a href="" class="btn btn-primary btn-attached"><i class="fa fa-link"></i></a>
+							</div>
+							</div>
+							<!-- <img src="img/project-33.jpg"class=""> -->
 						</div>
 					</div>
 				</div>
@@ -246,7 +334,7 @@
 	$(window).on("load", function(){
 	  var elem = document.getElementById("myBar");   
 	  var width = 0;
-	  var id = setInterval(frame, 100);
+	  var id = setInterval(frame, 10);
 	  function frame() {
 	    if (width == 100) {
 	      clearInterval(id);
