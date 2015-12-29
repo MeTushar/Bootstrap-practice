@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
 	<link rel="stylesheet" href="css/style.css">
 	<style>
 		.pageLoader {
@@ -80,6 +82,7 @@
 			-moz-transform: translateY(0px);
 			transform: translateY(0px);
 		}
+		
 		
 	</style>
 </head>
@@ -200,6 +203,29 @@
 								<div class="col-xs-12 text-center">
 									<h3>Work</h3>
 								</div>
+							</div>
+							<div class="col-sm-6">
+								<div id="owl-demo" class="owl-carousel">
+								  <div>
+								  	<h4>Software Engineer</h4>
+                                    <p class="subHeading"><i class="fa1 fa fa-bookmark"></i> KapganTech <i class="fa2 fa fa-calendar"></i> 2013 - 2014</p>
+                                    <p>I created an online blog on the subject of technology with a friend while I was studying my a-Levels. We managed to make a decent amount of income using Google Adsense while completing our studies. I learnt a lot about keyword research, search engine optimisation and copywriting for a blog.</p>
+								  </div>
+								  <div>
+								  	<h4>Software Engineer</h4>
+                                    <p class="subHeading"><i class="fa1 fa fa-bookmark"></i> ThoughtFocus technologies <i class="fa2 fa fa-calendar"></i> 2015 - till now</p>
+                                    <p>I created an online blog on the subject of technology with a friend while I was studying my a-Levels. We managed to make a decent amount of income using Google Adsense while completing our studies. I learnt a lot about keyword research, search engine optimisation and copywriting for a blog.</p>
+								  </div>
+								  <div>
+									<h4>Software Engineer</h4>
+                                    <p class="subHeading"><i class="fa1 fa fa-bookmark"></i> Looking to work with you <i class="fa2 fa fa-calendar"></i> From 2016</p>
+                                    <p>I created an online blog on the subject of technology with a friend while I was studying my a-Levels. We managed to make a decent amount of income using Google Adsense while completing our studies. I learnt a lot about keyword research, search engine optimisation and copywriting for a blog.</p>
+								  </div>
+								 
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<img src="img/work-desk1.jpg">
 							</div>
 						</div>
 					</div>
@@ -327,6 +353,7 @@
 	<script src="js/cbpAnimatedHeader.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js "></script>
 	<script src="js/wow.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
 	<script>
 	/*$(window).on("load resize", function(){
 		$(".fill-screen").css("height",window.innerHeight);
@@ -346,6 +373,14 @@
 	    }
 	  }
 	});
+	 $("#owl-demo").owlCarousel({
+	    autoPlay : 3000,
+	    stopOnHover : true,
+	    navigation:true,
+	    paginationSpeed : 1000,
+	    goToFirstSpeed : 2000,
+	    singleItem : true
+	  });
 	$("body").scrollspy({
 		target: ".navbar",
 		offset: 160
