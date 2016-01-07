@@ -251,10 +251,11 @@ footer a, .info a{
 }
 .resume{
 	background: #fff;
-	width: 100%;
+	width: 90%;
 	height: 100%;
 	padding: 20px;
 	color: #333;
+	overflow: scroll;
 }
 .inner-resume{
 	width: 80%;
@@ -297,7 +298,7 @@ footer a, .info a{
 		line-height: 40px;
 	}
 	#portfolio img {
-    	margin: 15px auto;
+    	margin: 0 auto;
 	}
 	.subHeading{
 	font-size: 0.9em;
