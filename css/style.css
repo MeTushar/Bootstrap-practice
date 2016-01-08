@@ -2,7 +2,7 @@ body{
 	color: #fff;
 	font-family: 'Open Sans Condensed', sans-serif;
 	padding-top: 75px;
-	/* height: 1000px; */
+	background: #000;
 }
 
 .navbar{
