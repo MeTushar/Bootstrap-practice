@@ -206,22 +206,22 @@
 								  <div>
 								  	<h4>Software Engineer</h4>
                                     <p class="subHeading"><i class="fa1 fa fa-bookmark"></i> KapganTech <i class="fa2 fa fa-calendar"></i> 2013 - 2014</p>
-                                    <p>I created an online blog on the subject of technology with a friend while I was studying my a-Levels. We managed to make a decent amount of income using Google Adsense while completing our studies. I learnt a lot about keyword research, search engine optimisation and copywriting for a blog.</p>
+                                    <p>I worked on an e-learning site. My work is to develop webpages using frontend technologies. Technologies i have used are HTML, HTML5, CSS, CSS3, jQuery, Javascript, Bootstrap3.</p>
 								  </div>
 								  <div>
 								  	<h4>Software Engineer</h4>
                                     <p class="subHeading"><i class="fa1 fa fa-bookmark"></i> ThoughtFocus technologies <i class="fa2 fa fa-calendar"></i> 2015 - till now</p>
-                                    <p>I created an online blog on the subject of technology with a friend while I was studying my a-Levels. We managed to make a decent amount of income using Google Adsense while completing our studies. I learnt a lot about keyword research, search engine optimisation and copywriting for a blog.</p>
+                                    <p>I am working on an ecommerce website. My work is to develop webpages using frontend technologies. Technologies i have used are HTML, HTML5, CSS, CSS3, jQuery, Javascript, Bootstrap3, Less, Grunt.</p>
 								  </div>
 								  <div>
-									<h4>Software Engineer</h4>
+									<h4>Need to discuss</h4>
                                     <p class="subHeading"><i class="fa1 fa fa-bookmark"></i> Looking to work with you <i class="fa2 fa fa-calendar"></i> From 2016</p>
-                                    <p>I created an online blog on the subject of technology with a friend while I was studying my a-Levels. We managed to make a decent amount of income using Google Adsense while completing our studies. I learnt a lot about keyword research, search engine optimisation and copywriting for a blog.</p>
+                                    <p>Yet to Know</p>
 								  </div>
 								 
 								</div>
 							</div>
-							<div class="col-sm-6">
+							<div class="col-sm-6 hidden-xs">
 								<img src="img/work-desk1.jpg">
 							</div>
 						</div>
@@ -295,19 +295,19 @@
 				<div class="col-xs-12 text-center">
 					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
 						<div class="contact-inner">
-						<h4>Address</h4>
+						<h4><i class="fa fa-map-marker"></i> Address</h4>
 						<p>BTM 2nd stage, Bangalore</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
 						<div class="contact-inner">
-						<h4>Phone</h4>
-						<p>8867153094</p>
+						<h4><i class="fa fa-phone"></i> Phone</h4>
+						<p>+91-8867153094</p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.5s">
 						<div class="contact-inner">
-						<h4>Email</h4>
+						<h4><i class="fa fa-envelope"></i> Email</h4>
 						<p>mehrotratushar@yahoo.com</p>
 						</div>
 					</div>
@@ -335,7 +335,6 @@
 							    			<h4>Frontend Developer</h4>
 							    		</div>
 							    		<div class="col-sm-6 text-right">
-							    			<a href="" class="btn btn-default">Download PDF</a>
 							    			<h4>mehrotratushar@yahoo.com</h4>
 							    			<h4>8867153094</h4>
 							    		</div>
@@ -364,7 +363,7 @@
 							    			</div>
 							    			<div class="row">
 								    			<div class="col-md-12">
-								    			<h4>ThoughtFocus technologies(2014-till now)</h4>
+								    			<h4>ThoughtFocus technologies(2015-till now)</h4>
 								    			<h5>Software Engineer</h5>
 								    			</div>
 							    			</div>
@@ -382,6 +381,22 @@
 								    			<h4><a href="metushar.github.io/Bootstrap-practice">Portfolio</a></h4>
 								    			</div>
 							    			</div>
+							    			<div class="row">
+								    			<div class="col-md-12">
+								    			<h4><a href="http://metushar.github.io/Business-website">Business Template 1</a></h4>
+								    			</div>
+							    			</div>
+							    			<div class="row hidden-xs">
+								    			<div class="col-md-12">
+								    			<h4><a href="http://metushar.github.io/Photo-Sharing-website-">Photo sharing template</a></h4>
+								    			</div>
+							    			</div>
+							    			<div class="row hidden-xs">
+								    			<div class="col-md-12">
+								    			<h4><a href="http://metushar.github.io/Project">Business Template 2</a></h4>
+								    			</div>
+							    			</div>
+
 							    			<div class="row">
 								    			<div class="col-md-12">
 								    			<h4><a href="codepen.io/MTushar">Code Pen</a></h4>
@@ -416,7 +431,7 @@
 	});*/
 	
 
-
+	reSize();
 	 $("#owl-demo").owlCarousel({
 	    autoPlay : 3000,
 	    stopOnHover : true,
@@ -445,7 +460,16 @@
 	  $("body").css("overflow","scroll");
 	  $(this).hide().siblings(".resume").hide().parent(".info-overlay").addClass("overlay-hide").removeClass("overlay-open");
 	});
-	
+	$(window).on("resize",function() {
+		reSize();
+	});
+	function reSize() {
+		if ($(window).width() < 728) {
+	      $(".info-overlay .inner-resume>div:first-child").removeClass("text-left").siblings("div").removeClass("text-right");
+	    } else {
+	      $(".info-overlay .inner-resume>div:first-child").addClass("text-left").siblings("div").addClass("text-right");
+	    }
+	}
 	new WOW().init();
 	</script>
 </body>
